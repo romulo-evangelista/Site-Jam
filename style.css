@@ -1,0 +1,373 @@
+:root {
+	--corBg3: #27435A;
+	--corBg2: #727272;
+	--corBg: #37393A;
+	--corTitulo: #FF9000;
+	--footer: #727272;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+}
+
+#logo {
+	position: absolute;
+	left: 4%;
+	width: 292px;
+	height: 200px;
+	overflow: hidden;
+}
+
+#logo img{
+	width: 100%;
+	height: 100%;
+}
+
+nav ul {
+	position: absolute;
+	right: 4%;
+	margin: 0;
+	padding: 0 10px;
+	background-color: var(--corBg);
+	list-style: none;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 50px;
+	height: 50px;
+	transition: 0.5s;
+}
+
+nav li:hover {
+	color: #fff;
+	box-shadow: inset 0 -5px #fff;
+}
+
+nav a {
+	font-family: 'montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+p {
+	font-family: 'montserrat', sans-serif;
+	color: white;
+}
+
+h1 {
+	font-family: 'montserrat', sans-serif;
+	border-bottom: 3px solid;
+	width: 15vw;
+	color: var(--corTitulo);
+}
+
+.partes {
+	width: 100%;
+	height: 100vh;
+	background: var(--corBg3);
+	padding: 4% 15%;
+	box-sizing: border-box;
+}
+
+#parte2, #parte4, #parte6 {
+	background: var(--corBg);
+}
+
+footer {
+	background: var(--footer);
+	height: 20vh;
+}
+
+/* PARTE 1 - INICIAL*/
+
+
+#parte1 {
+	height: 100vh;
+	background: url('imagens/img.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+#btnCursos {
+	font-family: 'montserrat', sans-serif;
+	font-style: uppercase;
+	position: absolute;
+	padding: 20px;
+	top: 90vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50px;
+	outline: none;
+	border: none;
+	background: var(--corBg);
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 0 10px #000;
+}
+
+
+/* PARTE 2 - PERFIL*/
+
+
+#parte2 img{
+	float: left;
+	width: 23vw;
+	height: 60vh;
+}
+
+#txtPerfil{
+	position: relative;
+	left: 50px;
+	float: right;
+}
+
+#parte2 h2 {
+	font-family: 'montserrat', sans-serif;
+	position: relative;
+	width: 300px;
+	font-size: 40px;
+	color: var(--corTitulo);
+}
+
+#parte2 p {
+	position: relative; 
+	width: 600px;
+	font-size: 16px;
+}
+
+
+/* PARTE 3 - CURSOS */
+
+
+#parte3 img {
+	width: 250px;
+	height: 250px;
+}
+
+#parte3 p {
+	width: 250px;
+	text-align: center;
+}
+
+.cursos {
+	width: 250px;
+    margin: 10px auto;
+}
+
+.todosCursos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+
+/* CASOS DE SUCESSO */
+
+
+#parte4 {
+	height: 200vh;
+}
+
+.casosDeSucesso {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.sucesso img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.sucesso {
+	width: 100%;
+	height: 300px;
+}
+
+#sucesso1 img {
+	float: left;
+}
+
+#sucesso2 img {
+	float: right;
+	top: 100px;
+}
+
+#sucesso1 p {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	float: right;
+	text-align: center;
+	font-size: 16px;
+}
+
+#sucesso2 p {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+}
+
+.txtCDS {
+	text-align: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	flex-direction: column;
+	align-items: stretch;
+
+}
+
+.sucesso i {
+	margin: 14px;
+	color: #fff;
+	font-size: 30px;
+}
+
+
+/* O QUE AS PESSOAS ESTÃO COMENTANDO */
+
+
+.comenta {
+	width: 100%;	
+	display: flex;
+	justify-content: center;
+}
+
+.comenta img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+
+.pessoas {
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.pessoas p {
+	line-height: 1.5em;
+}
+
+
+/* VÍDEOS */
+
+
+#parte5 {
+	height: 150vh;
+}
+
+.videos {
+	text-align: center;
+}
+
+.videosPequenos {
+	text-align: center;
+}
+
+.videosPequenos iframe {
+	margin: 50px 15px;
+}
+
+
+/*  CONTATO  */
+
+#contato {
+	margin: 0 auto;
+	margin-top: 70px;
+	padding: 40px;
+	width: 40vw;
+	background: none;
+	box-shadow: 0 0 10px #000;
+	border-radius: 20px;
+}
+
+#contato input, button, textarea {
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#contato input, textarea {
+	background: none;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid var(--corBg3);
+	width: 500px;
+	height: 30px;
+	color: #fff;
+}
+
+#contato textarea {
+	height: 100px;
+}
+
+#contato button {
+	width: 200px;
+	height: 50px;
+	background: var(--corBg3);
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	transition: 1s;
+}
+
+#contato button:hover {
+	background: #fff;
+	color: var(--corBg3);
+}
+
+
+/*  RODAPÉ  */
+
+
+footer {
+	width: 100%;
+	margin: 0 auto;
+}
+
+footer #social, #direitos{
+	width: 100%;
+	text-align: center;
+}
+
+#social i {
+	padding: 5px;
+	font-size: 48px;
+	margin: 20px 10px;
+	color: var(--corBg3);
+	transition: 0.5s;
+}
+
+#social i:hover {
+	transform: scale(1.3);
+	color: var(--corBg);
+}
+
+#direitos {
+	font-size: 16px;
+	color: black;
+	font-family: 'montserrat', sans-serif;
+}
