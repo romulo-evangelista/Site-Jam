@@ -183,7 +183,7 @@ footer {
 
 
 #parte4 {
-	height: 180vh;
+	height: 215vh;
 }
 
 .casosDeSucesso {
@@ -191,7 +191,7 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin-bottom: 100px; 
+    margin-bottom: 10vh; 
 }
 
 .sucesso img {
