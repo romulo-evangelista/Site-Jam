@@ -2,13 +2,15 @@
 <html>
 <head>
 	<title>Site Jam</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
 </head>
 <body>
 	
-	<div id="logo">
+	<div data-aos="fade-down" id="logo">
 		<img src="imagens/logo.png" id="imgLogo">
 	</div>
 
@@ -31,10 +33,10 @@
 
 	<article class="partes" id="parte2">
 		<h1>Perfil</h1>
-		<div id="imgPerfil">
+		<div data-aos="fade-up" id="imgPerfil">
 			<img src="imagens/silvia.jpeg">
 		</div>
-		<div id="txtPerfil">
+		<div data-aos="fade-right" id="txtPerfil">
 			<h2>Silvia Bittencourt</h2>
 
 			<p>Natural de fortaleza, Iniciou seus estudos com a mãe, aos 10 anos de idade. Na Escola Municipal de Música estudou piano Erudito por 9 anos, onde foi aluna de Edda Fiore, uma das mais conceituadas professoras do instrumento no nosso país.
@@ -47,7 +49,7 @@
 
 	<article class="partes" id="parte3">
 		<h1>Cursos</h1>
-		<div class="todosCursos">
+		<div data-aos="fade-up" class="todosCursos">
 			<div class="cursos" id="curso1">
 				<img src="imagens/canto.png" id="imgCurso1">
 				<div id="txtCurso1" class="txtCurso">
@@ -76,7 +78,7 @@
 	<article class="partes" id="parte4">
 		<h1>Casos de Sucesso</h1>
 		<div class="casosDeSucesso">
-			<div class="sucesso" id="sucesso1">
+			<div data-aos="fade-right" class="sucesso" id="sucesso1">
 				<img src="imagens/joelma.jpg" id="imgSucesso1">
 				<div class="txtCDS">
 					<i class="fas fa-quote-left"></i>
@@ -85,7 +87,7 @@
 				</div>
 			</div>
 
-			<div class="sucesso" id="sucesso2">
+			<div data-aos="fade-left" class="sucesso" id="sucesso2">
 				<img src="imagens/sandy.jpg" id="imgSucesso2">
 				<div class="txtCDS">
 					<i class="fas fa-quote-left"></i>
@@ -97,13 +99,13 @@
 
 		<h1>O que as pessoas estão comentando...</h1>
 		<div class="comenta">
-			<div class="pessoas" id="pessoas1">
+			<div data-aos="fade-up" class="pessoas" id="pessoas1">
 				<img src="imagens/larissa.jpeg" id="imgPessoas1">
 				<p>"Todos esses projetos que a Silvia realiza são muito bem organizados, feitos com muito amor. Na escola como diretora e professora merece muitos elogios e parabéns."</p>
 				<h4>Larissa</h4>
 			</div>
 
-			<div class="pessoas" id="pessoas2">
+			<div data-aos="fade-up" class="pessoas" id="pessoas2">
 				<img src="imagens/carlos.jpeg" id="imgPessoas2">
 				<p>"O incentivo ao estudo de música realizado pela Silvia, respeitando as individualidades conduz inevitavelmente ao sucesso musical em todas as escalas."</p>
 				<h4>Carlos Maia</h4>
@@ -157,4 +159,12 @@
 	</footer>
 
 </body>
+
+<script src ="js/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 200,
+          duration: 2000,
+        });
+      </script>
 </html>

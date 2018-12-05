@@ -11,6 +11,10 @@ body {
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 nav {
 	position: fixed;
 	width: 100%;
@@ -25,6 +29,7 @@ nav {
 	width: 200px;
 	height: 78.4px;
 	overflow: hidden;
+
 }
 
 #logo img{
@@ -98,11 +103,16 @@ footer {
 
 /* PARTE 1 - INICIAL*/
 
+#imgPerfil img{
+	border: 5px solid white;
+}
+
 
 #parte1 {
 	height: 100vh;
 	background: url('imagens/img.jpg') no-repeat center center fixed;
 	background-size: cover;
+	background-position: left;
 }
 
 #btnCursos {
@@ -120,6 +130,25 @@ footer {
 	color: white;
 	cursor: pointer;
 	box-shadow: 0 0 10px #000;
+	transition: 1s ease-out;
+}
+
+#imgCurso1{
+	border-radius: 10px;
+}
+
+
+#imgCurso2{
+	border-radius: 10px;
+}
+
+#imgCurso3{
+	border-radius: 10px;
+}
+
+#btnCursos:hover {
+	top:89vh;
+	background-color: var(--corBg3);
 }
 
 
@@ -150,6 +179,8 @@ footer {
 	position: relative; 
 	width: 600px;
 	font-size: 16px;
+	line-height: 22px;
+	text-align: justify;
 }
 
 
@@ -169,6 +200,13 @@ footer {
 .cursos {
 	width: 250px;
     margin: 10px auto;
+    position: relative;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.cursos:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .todosCursos {
@@ -176,6 +214,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
+    clear: both;
 }
 
 
